@@ -1,0 +1,80 @@
+/*COURSES FILE DESIGN*/
+.courses-image {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+.courses-title {
+    font-size: 2em;
+    margin-bottom: .5em;
+}
+
+.courses-details {
+    padding: 1em 0;
+    font-size: 1.2em;
+}
+
+.courses-information {
+    line-height: 2em;
+    margin-top: .5em;
+}
+
+/*COURSES FILE MOBILE/TABLET DESIGN*/
+@media (max-width: 767px) {
+    .courses-information-container {
+        width: 90%;
+        margin: 2em auto;
+    }
+
+    .courses-information {
+        text-align: justify;
+    }
+}
+
+/*COURSES FILE PC DESIGN*/
+@media (min-width: 768px) and (max-width: 1023px) {
+    .courses-image-container {
+        width: 90%;
+        margin: auto;
+    }
+
+    .courses-information-container {
+        width: 90%;
+        margin: 2em auto;
+    }
+
+    .courses-information {
+        text-align: justify;
+    }
+}
+
+@media (min-width: 1024px) {
+    .courses-columns-container {
+        display: flex;
+        margin: 3em 0;
+        padding-bottom: 3em;
+        border-bottom: 1px solid hsla(0, 0%, 50%, 0.795);
+    }
+
+    .courses-columns-container:last-child {
+        border: none;
+    }
+
+    .courses-column-left {
+        width: 35%;
+    }
+
+    .courses-column-right {
+        width: 65%;
+    }
+
+    .courses-information-container {
+        width: 90%;
+        margin: 0 5em 0 1.5em;
+    }
+
+    .courses-image-container {
+        margin-left: 10%;
+    }
+}

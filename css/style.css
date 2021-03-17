@@ -1,0 +1,76 @@
+/*IMPORT EVERY CSS FILE*/
+@import url(header.css);
+@import url(index.css);
+@import url(footer.css);
+@import url(nosotros.css);
+@import url(cursos.css);
+@import url(contacto.css);
+
+/*NORMALIZE*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    user-select: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/*GENERAL STYLES*/
+a {
+    text-decoration: none;
+}
+
+img {
+    object-fit: cover;
+    width: 100%;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.section-title {
+    font-size: 2em;
+    padding: 1em 0;
+}
+
+.tt-uppercase {
+    text-transform: uppercase;
+}
+
+.d-block {
+    display: block;
+}
+
+.ta-center {
+    text-align: center;
+}
+
+.ta-justify {
+    text-align: justify;
+}
+
+.precio-curso,
+.cupo-curso {
+    margin: 2em 0 2em 0;
+}
+
+/*SCROLLBAR DESIGN*/
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(255, 166, 0);
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(246, 119, 0);
+}

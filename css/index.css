@@ -1,0 +1,106 @@
+/*INDEX FILE LINKS DESIGN*/
+.blog-link {
+    color: rgb(185, 184, 184);
+    background: black;
+    transition: 280ms;
+}
+
+.blog-link:hover {
+    color: rgb(255, 255, 255);
+}
+
+.curso-link {
+    background: #784d3c;
+    color: rgb(236, 205, 178);
+    transition: 280ms;
+}
+
+.curso-link:hover {
+    color: white;
+}
+
+.blog-link,
+.curso-link {
+    padding: 1em;
+}
+
+/*INDEX FILE MOBILE DESIGN*/
+@media (max-width: 768px) {
+    .index-columns {
+        width: 92%;
+        margin: 0 4% 0 4%;
+    }
+
+    .blog-link,
+    .curso-link {
+        margin: 1em 0 1em 0;
+    }
+}
+
+/*INDEX FILE TABLET/PC DESIGN*/
+@media (min-width: 768px) {
+    .blog-link {
+        width: 30%;
+        margin: 1em 0 1em 0;
+    }
+}
+
+/*INDEX FILE TABLET DESIGN*/
+@media (min-width: 769px) and (max-width:1024px) {
+    .index-columns {
+        width: 90%;
+        margin: 0 5% 0 5%;
+    }
+
+    .section-title {
+        padding: 1em 0;
+    }
+
+    .precio-curso,
+    .cupo-curso {
+        margin: 2em 0 2em 0;
+    }
+
+    .cursos-information-container {
+        margin-bottom: 2em;
+    }
+
+    .title-mobile {
+        padding: .5em 0;
+    }
+}
+
+/*INDEX FILE PC DESIGN*/
+@media (min-width: 1024px) {
+    .columns-container {
+        display: flex;
+    }
+
+    .column-left {
+        width: 55%;
+        margin: 0 5% 0 5%;
+    }
+
+    .column-right {
+        width: 30%;
+        margin-right: 5%;
+    }
+
+    .title-mobile {
+        padding-bottom: .5em;
+        font-size: 1.8em;
+    }
+
+    .first-container {
+        padding-bottom: 2em;
+        border-bottom: 1px solid rgb(160, 160, 160);
+    }
+
+    .second-container {
+        padding-top: 2em;
+    }
+
+    .curso-link {
+        font-size: 1.2em;
+    }
+}

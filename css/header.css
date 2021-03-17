@@ -1,0 +1,265 @@
+/*BANNER CONTAINER DESIGN*/
+.banner {
+    background-image: url(../img/banner.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    color: white;
+}
+
+/*LOGO DESIGN*/
+.logo-menu-container {
+    display: flex;
+}
+
+.logo-header {
+    padding-top: .5em;
+}
+
+.logo {
+    transition: 280ms;
+    font-size: 2em;
+    color: white;
+}
+
+.logo:hover {
+    color: rgb(161, 161, 161);
+}
+
+/*OVERLAY MENU ICON*/
+.open-menu {
+    position: absolute;
+    right: 0;
+    padding-top: .3em;
+    margin-right: 4%;
+    font-size: 2em;
+    transition: 250ms;
+    color: #f1f1f1;
+}
+
+.open-menu:hover {
+    color: #818181;
+}
+
+/*OVERLAY MENU & BANNER MOBILE RESPONSIVE DESIGN*/
+@media (max-width: 768px) {
+
+    /*OVERLAY MENU*/
+    .overlay {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.9);
+        overflow-x: hidden;
+        transition: 0.5s;
+    }
+
+    .overlay-content {
+        position: relative;
+        top: 35%;
+        width: 100%;
+        text-align: center;
+    }
+
+    .overlay a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 36px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+        font-weight: bold;
+    }
+
+    .overlay a:hover,
+    .overlay a:focus {
+        color: #f1f1f1;
+    }
+
+    .overlay .closebtn {
+        position: absolute;
+        top: .2em;
+        right: .5em;
+        font-size: 60px;
+    }
+
+
+
+
+    /*BANNER*/
+    .banner {
+        height: 350px;
+    }
+
+    .banner-description-container {
+        width: 92%;
+        margin: 0 4% 0 4%;
+    }
+
+    .banner-title {
+        font-size: 2em;
+    }
+
+    .banner-text {
+        padding-top: .5em;
+    }
+
+    .logo-header {
+        margin-left: 5%;
+    }
+
+    .logo {
+        font-size: 2em;
+    }
+
+}
+
+/*ICONS, OVERLAY MENU & BANNER TABLET/PC RESPONSIVE DESIGN*/
+@media (min-width: 769px) {
+
+    /*MENU-ICON*/
+    .icon-bars {
+        display: none;
+    }
+
+    /*CLOSE BUTTON ICON*/
+    .closebtn {
+        display: none;
+    }
+
+    /*OVERLAY MENU*/
+    .overlay-content {
+        position: absolute;
+        right: 0;
+        padding: 1em 1em 0 0;
+    }
+
+
+    /*BANNER*/
+    .banner-title {
+        font-size: 3em;
+    }
+
+    .banner-link {
+        padding: 1em;
+        color: white;
+        transition: 280ms;
+    }
+
+    .banner-link:hover {
+        color: rgb(161, 161, 161);
+    }
+
+}
+
+/*BANNER & LOGO TABLET RESPONSIVE DESIGN*/
+@media (min-width:768px) and (max-width:1024px) {
+
+    /*BANNER*/
+    .banner {
+        height: 800px;
+    }
+
+    .banner-text {
+        font-size: 1.5em;
+    }
+
+    /*LOGO*/
+    .logo-header {
+        margin-left: 6%;
+    }
+}
+
+/*BANNER, LOGO & NAVBAR PC MENU RESPONSIVE DESIGN*/
+@media (min-width: 1024px) {
+
+    /*BANNER*/
+    .banner {
+        height: 800px;
+    }
+
+    .banner-link {
+        font-size: 1.2em;
+    }
+
+    .banner-description-container {
+        margin-top: 18em;
+        width: 100%;
+        text-align: center;
+    }
+
+    /*^ BANNER ^*/
+
+    /*LOGO*/
+    .logo {
+        font-size: 3em;
+    }
+
+    .logo-header {
+        margin-left: 6%;
+    }
+
+    .logo-header,
+    .overlay-content {
+        margin-top: 3em;
+    }
+
+    /*^ LOGO ^*/
+
+    /*NAVBAR MENU*/
+    .overlay-content {
+        margin-right: 4em;
+    }
+}
+
+/*BANNER DESCRIPTION MOBILE RESPONSIVE DESIGN*/
+@media (max-width: 578px) {
+    .banner-description-container {
+        margin-top: 10em;
+    }
+}
+
+@media (min-width: 579px) and (max-width: 768px) {
+    .banner-description-container {
+        margin-top: 13em;
+    }
+}
+
+
+
+/*BANNER DESCRIPTION TABLET RESPONSIVE DESIGN*/
+@media (min-width: 769px) and (max-width: 882px) {
+    .banner-description-container {
+        width: 90%;
+        margin: 32em 5% 0 5%;
+    }
+}
+
+@media (min-width: 883px) and (max-width: 1024px) {
+    .banner-description-container {
+        width: 90%;
+        margin: 36em 5% 0 5%;
+    }
+}
+
+
+/*OVERLAY MENU HEIGHT RESPONSIVE DESIGN*/
+@media (max-height: 450px) {
+    .overlay a {
+        font-size: 20px
+    }
+
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}

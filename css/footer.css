@@ -1,0 +1,56 @@
+/*LOGO & NAVBAR FOOTER CONTAINER*/
+.logo-nav-footer {
+    background: #000;
+    padding: 1em;
+}
+
+/*NAVBAR CONTAINER*/
+.navbar-footer-container {
+    display: flex;
+    list-style: none;
+}
+
+/*NAVBAR LINKS*/
+.footer-link {
+    color: white;
+    display: block;
+    padding: 0.8em 1em 0 .3em;
+}
+
+/*FOOTER LOGO MOBILE RESPONSIVE DESIGN*/
+@media (max-width: 768px) {
+    .logo-footer {
+        padding-left: .3em;
+    }
+}
+
+/*LOGO & NAVBAR TABLET/PC RESPONSIVE DESIGN*/
+@media (min-width: 768px) {
+    .logo-nav-footer {
+        display: flex;
+    }
+
+    .navbar-footer-container {
+        position: absolute;
+        right: 0;
+        margin-right: 2em;
+    }
+}
+
+/*LOGO TABLET RESPONSIVE DESIGN */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .logo-footer {
+        padding-left: 1.3em;
+    }
+}
+
+/*FOOTER LOGO & NAVBAR LINKS PC RESPONSIVE DESIGN*/
+@media (min-width: 1024px) {
+    .logo-footer {
+        padding-left: 4%;
+    }
+
+    .footer-link {
+        padding-top: 1em;
+    }
+}

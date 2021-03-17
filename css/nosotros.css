@@ -1,0 +1,49 @@
+/*US FILE DESIGN*/
+.us-image-container {
+    width: 90%;
+    margin: auto;
+}
+
+.us-image {
+    width: 100%;
+    object-fit: cover;
+}
+
+.us-information {
+    font-size: 1.3em;
+    line-height: 1.7em;
+    font-weight: lighter;
+}
+
+.us-information:last-child {
+    margin-top: 2em;
+}
+
+/*US FILE MOBILE/TABLET DESIGN*/
+@media (max-width: 1023px) {
+    .us-information-container {
+        width: 90%;
+        margin: 3em auto;
+        text-align: justify;
+    }
+}
+
+/*US FILE PC DESIGN*/
+@media (min-width: 1024px) {
+    .us-columns-container {
+        display: flex;
+        margin-bottom: 6em;
+    }
+
+    .us-column-left {
+        width: 50%;
+    }
+
+    .us-column-right {
+        width: 50%;
+    }
+
+    .us-information-container {
+        margin-right: 7em;
+    }
+}
