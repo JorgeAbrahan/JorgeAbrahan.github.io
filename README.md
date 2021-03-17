@@ -1,4 +1,4 @@
-# cafeteria
+# Blog Cafeteria
 Un diseño sencillo para una página de blogs de una cafeteria.
 
 Como siempre el index es la pagina inicial y contiene un enlace a cada una de las demas paginas.
